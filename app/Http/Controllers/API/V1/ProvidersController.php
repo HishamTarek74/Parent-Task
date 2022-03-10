@@ -23,7 +23,7 @@ class ProvidersController
                 ->applyAmount($request->get('balanceMin'), $request->get('balanceMax'));
 
             if ($filteringUser->isValid()) {
-               // dd($user);
+             //   dd($user);
                 $data[] = $userResource
                     ->setUser($user)
                     ->transform();

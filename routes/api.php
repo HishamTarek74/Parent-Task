@@ -22,5 +22,5 @@ Route::group([
         'prefix' => 'v1',
         'namespace' => 'App\Http\Controllers\API\V1'
     ], function () {
-        Route::get('users', 'ProvidersController@index');
+        Route::get('users', 'ProvidersController@index')->name('users.index');
 });
